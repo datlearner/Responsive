@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden !important;
+    font-family: "Poppins", sans-serif;
+}
+
+.mainn{
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./pexels-shvetsa-3845806.jpg);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    place-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    
+}
+.dropdown{
+    cursor: pointer;
+    display: none;
+}
+.bar1, .bar2,
+.bar3{
+
+    transition: .4s;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+}
+
+.flex{
+    place-items: center;
+    display: flex;
+}
+.icons{
+    margin: 0px 30px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li{
+    float: left;
+}
+.fa-brands{
+    margin: 0px 10px;
+    font-size: 25px;
+    transition: .4s;
+}
+.fa-brands:hover{
+    color: #00B8B8;
+    cursor: pointer;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 0px 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    transition: .4s;
+}
+li a:hover{
+    transition: .4s;
+    cursor: pointer;
+    border-bottom: 1px solid #00B8B8;
+    color: #00B8B8;
+}
+.absolute{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    
+}
+.main{
+    width: 440px;
+    height: auto;
+  
+}
+.flexx{
+    margin-top: 17px;
+    display: flex;
+}
+.flexx div{
+    margin: 0px 5px;
+    text-align: center;
+    width: 200px;
+    border-bottom: 2px solid orangered;
+    height: 35px;
+    color: orangered;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: black;
+}
+
+button{
+    width: 130px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: capitalize;
+    background-color: #00B8B8;
+    border: 2px solid #00B8B8 !important;
+    border-radius: 5px;
+}
+
+.hiden{
+    width: 100%;
+    display: none;
+    height: auto;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 100;
+}
+
+.change .bar1{
+    transform: translate(0px, 11px) rotate(-45deg);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: translate(0px, -8px) rotate(45deg);
+}
+.bar2{
+    width: 18px;
+    margin-left: 16px;
+}
+
+@media(max-width: 915px){
+    .absolute h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 769px){
+    .links{
+        display: none;
+    }
+    .lin a:hover{
+        border: none;
+    }
+    li{
+        float: none;
+        text-align: center;
+        margin: 10px 0px;
+        padding: 5px;
+    }
+    .lin a{
+        color: white;
+        
+    }
+    .hiden{
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
+    .absolute h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .flexx{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 394px){
+    .fa-brands{
+        font-size: 22px;
+    }
+    .main h1{
+        font-size: 24px;
+    }
+
+
+}
+@media(max-width: 361px){
+    .fa-brands{
+        font-size: 17px;
+    }
+    .main h1{
+        font-size: 24px;
+    }
+    nav div img{
+        width: 80px !important;
+        margin: 0px 5px;
+    }
+
+
+}
+
+
+
+@media(max-width: 345px){
+    .fa-brands{
+        font-size: 17px;
+    }
+    .main h1{
+        font-size: 24px;
+    }
+    nav div img{
+        width: 80px !important;
+        margin: 0px 5px;
+    }
+
+
+}
+
+
+
+
+@media(max-width: 321px){
+    .fa-brands{
+        font-size: 18px;
+    }
+    .main h1{
+        font-size: 13px;
+    }
+    nav div img{
+        width: 80px !important;
+        margin: 0px 5px;
+    }
+    button,
+    .small{
+        width: 120px !important;
+        font-size: 10px;
+    }
+    .small{
+        padding: 7px;
+        width: 150px !important;
+    }
+
+}
+
